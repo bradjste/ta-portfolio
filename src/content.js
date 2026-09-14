@@ -1,15 +1,15 @@
 // Everything a visitor reads lives here. Edit freely; the layout adapts.
 
 export const person = {
-  name: 'Brad Lastname', // TODO: your full name
+  name: 'Brad Stevenson',
   role: 'Technical artist',
   pitch: 'Engineer with an art degree, looking to build the tools animators and cinematics artists reach for every day.',
-  email: 'you@example.com', // TODO
-  location: 'City, State', // TODO: ArenaNet lists remote-eligible states, so this is worth showing
+  email: 'bradjste@gmail.com',
+  location: 'San Diego, CA', 
   links: [
-    { label: 'GitHub', href: 'https://github.com/' }, // TODO
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/' }, // TODO
-    { label: 'Résumé (PDF)', href: '#' }, // TODO
+    { label: 'GitHub', href: 'https://github.com/bradjste' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/bradjste' },
+    { label: 'Résumé (PDF)', href: '/Brad_Stevenson_Resume.pdf' },
   ],
 }
 

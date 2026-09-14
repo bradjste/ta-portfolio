@@ -265,14 +265,6 @@ a { color: var(--ink); font-weight: 600; text-decoration-color: var(--violet); t
   font: 800 1.35rem/1.1 var(--font);
   border-bottom: 3px dotted var(--violet);
 }
-.fit { margin: 0; }
-.fit div { display: grid; grid-template-columns: 12px 1fr; column-gap: 12px; padding: 8px 0; }
-.fit div::before { content: ''; grid-row: 1; width: 12px; height: 12px; margin-top: 4px; border-radius: 50%; background: var(--mint); }
-.fit dd { grid-column: 2; }
-.fit div:nth-child(2n)::before { background: var(--violet); }
-.fit div:nth-child(3n)::before { background: var(--orange); }
-.fit dt { font: 800 1rem/1.3 var(--font); }
-.fit dd { margin: 2px 0 0; font-size: 0.92rem; color: var(--grey); }
 
 .work { list-style: none; margin: 0; padding: 0; }
 .work li { padding: 14px 0; border-top: 1px solid var(--line); }

@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import Scene from './Scene'
 import { store, clock, useStore } from './store'
 import { LENGTH, KEYS, FPS, CONTROLS, DEFAULTS, TANGENT_MODES, jointRotation, jointStretch, jointName, sampleRoot, wobbleAt } from './anim'
-import { person, about, fit, work } from './content'
+import { person, about, work } from './content'
 import { paletteAt, applyCssPalette, rotate, BASE } from './palette'
 import { MODELS, modelInfo } from './models'
 
@@ -400,15 +400,6 @@ function About() {
       {about.map((p) => (
         <p key={p.slice(0, 24)}>{p}</p>
       ))}
-      <h3>For this role</h3>
-      <dl className="fit">
-        {fit.map((f) => (
-          <div key={f.need}>
-            <dt>{f.need}</dt>
-            <dd>{f.have}</dd>
-          </div>
-        ))}
-      </dl>
     </div>
   )
 }
@@ -425,7 +416,7 @@ function Work() {
     <ul className="work">
       {work.map((w, i) => (
         <li key={w.title} style={{ '--chip': CHIPS[i % CHIPS.length][0], '--chip-ink': CHIPS[i % CHIPS.length][1] }}>
-          <a href={w.href}>
+          <a>
             <span className="work-title">{w.title}</span>
             <span className="work-kind">{w.kind}</span>
           </a>
@@ -473,7 +464,7 @@ function Contact() {
       <button className="primary" onClick={draft}>Open email draft</button>
       <ul className="links">
         {person.links.map((l) => (
-          <li key={l.label}><a href={l.href}>{l.label}</a></li>
+          <li key={l.label}><a href={l.href} target={l.target || '_self'}>{l.label}</a></li>
         ))}
       </ul>
     </div>

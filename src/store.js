@@ -10,7 +10,7 @@ let state = {
   frame: 0,
   playing: !prefersReducedMotion,
   ...DEFAULTS, // overlap, swing, speed, wobble, curl, squash, tangents, hue
-  model: 'tail',
+  model: 'noodle',
   showMesh: true,
   showSkeleton: true,
   selected: null, // joint index or null

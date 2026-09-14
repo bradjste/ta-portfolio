@@ -3,7 +3,7 @@
 export const person = {
   name: 'Brad Stevenson',
   role: 'Technical artist',
-  pitch: 'Engineer with an art degree, looking to build the tools artists reach for every day.',
+  pitch: 'Engineer with an art degree, looking to build the tools artists and developers reach for every day.',
   email: 'bradjste@gmail.com',
   location: 'San Diego, CA', 
   links: [

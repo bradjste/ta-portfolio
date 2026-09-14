@@ -8,8 +8,8 @@ import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeom
 export const SEG_H = 0.42
 
 export const MODELS = [
-  { id: 'tail', label: 'Tail', prefix: 'tail', binding: 'smooth skin' },
   { id: 'noodle', label: 'Noodle', prefix: 'noodle', binding: 'smooth skin' },
+  { id: 'tail', label: 'Tail', prefix: 'tail', binding: 'smooth skin' },
   { id: 'blocks', label: 'Blocks', prefix: 'block', binding: 'rigid parts' },
   { id: 'fern', label: 'Fern', prefix: 'fern', binding: 'smooth + rigid' },
   { id: 'chain', label: 'Chain', prefix: 'link', binding: 'rigid parts' },

@@ -73,4 +73,4 @@ export function jointStretch(frame, i, s) {
   return 1 + s.squash * 0.3 * (Math.min(speed, 1) * 2 - 1)
 }
 
-export const jointName = (i, prefix = 'tail') => `${prefix}_jnt_${String(i + 1).padStart(2, '0')}`
+export const jointName = (i, prefix = 'noodle') => `${prefix}_jnt_${String(i + 1).padStart(2, '0')}`
